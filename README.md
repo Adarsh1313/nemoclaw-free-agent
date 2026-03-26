@@ -1,7 +1,5 @@
 # nemoclaw-free-agent
 
-# nemoclaw-free-agent
-
 # 🦞 NemoClaw — Sandboxed AI Agent on GitHub Codespaces
 
 **NemoClaw** is NVIDIA's secure runtime for deploying OpenClaw autonomous agents inside a policy-governed sandbox. This repository documents how to run a persistent, fully autonomous AI agent using GitHub Codespaces as the host environment — with zero GPU spend, no VPS provisioning, and no local system risk.
