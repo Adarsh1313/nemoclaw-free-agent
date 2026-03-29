@@ -238,7 +238,7 @@ def send_pr_ready(repo_name: str, new_repo_name: str, pr_url: str,
         "1️⃣ Open the PR link above and review the changes\n"
         "2️⃣ Merge the PR on GitHub when satisfied\n"
         f"3️⃣ Then reply here: `!rename-repo {repo_name} {new_repo_name}`\n"
-        "   ↳ This triggers the GitHub repo rename",
+        "   -> This triggers the GitHub repo rename",
         color=COLOR_PR
     )
 
