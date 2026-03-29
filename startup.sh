@@ -39,7 +39,7 @@ pkill -f "discord_bot_runner.py" 2>/dev/null || true
 sleep 1
 
 # Start bot in background, log output to bot.log
-nohup python3 discord_bot_runner.py > "$BOT_LOG" 2>&1 &
+nohup python3 utils/discord_bot_runner.py > "$BOT_LOG" 2>&1 &
 BOT_PID=$!
 sleep 2
 
