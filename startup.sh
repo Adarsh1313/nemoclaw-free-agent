@@ -9,7 +9,7 @@
 
 set -e
 
-REPO_DIR="/workspaces/nemoclaw-setup"   # adjust if your setup repo has a different name
+REPO_DIR="/workspaces/nemoclaw-free-agent"   # adjust if your setup repo has a different name
 BOT_LOG="$REPO_DIR/bot.log"
 
 echo ""
