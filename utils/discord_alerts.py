@@ -230,15 +230,15 @@ def send_pr_ready(repo_name: str, new_repo_name: str, pr_url: str,
     """
     _send_webhook(
         f"🔀 PR Ready — `{repo_name}`",
-        f"**Branch:** `{branch}` → `main`\n\n"
-        f"**Pull Request:** {pr_url}\n\n"
-        f"**Changes on this branch:**\n"
-        f"{changes_summary or '• File renames to snake_case\n• README.md added\n• requirements.txt added\n• .gitignore added'}\n\n"
+        "**Branch:** `" + branch + "` -> `main`\n\n"
+        "**Pull Request:** " + pr_url + "\n\n"
+        "**Changes on this branch:**\n"
+        + (changes_summary or "• File renames to snake_case\n• README.md added\n• requirements.txt added\n• .gitignore added") + "\n\n"
         "**Your steps:**\n"
-        "1️⃣ Open the PR link above and review the changes\n"
-        "2️⃣ Merge the PR on GitHub when satisfied\n"
-        f"3️⃣ Then reply here: `!rename-repo {repo_name} {new_repo_name}`\n"
-        "   -> This triggers the GitHub repo rename",
+        "1\u0031\ufe0f\u20e3 Open the PR link above and review the changes\n"
+        "2\u0032\ufe0f\u20e3 Merge the PR on GitHub when satisfied\n"
+        + "3\u0033\ufe0f\u20e3 Then reply here: `!rename-repo " + repo_name + " " + new_repo_name + "`\n"
+        + "   -> This triggers the GitHub repo rename",
         color=COLOR_PR
     )
 
